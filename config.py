@@ -1,0 +1,35 @@
+# config.py
+
+NODE1_USE_ZO = True   # True = ZO at Node1, False = Nothing
+NODE2_USE_BACKPROP = True
+
+NODE1_LR = 5e-5
+NODE2_LR = 5e-5
+# LEARNING_RATE = 5e-5
+
+WEIGHT_DECAY = 0.01
+
+ZO_MU = 1e-3
+ZO_PERTURBATIONS = 5
+LEARNING_RATE = 5e-6
+
+# ZO_MU = 0.01
+# ZO_PERTURBATIONS = 4
+
+SPLIT_LAYER_IDX = 2
+BATCH_SIZE = 4
+NUM_EPOCHS = 10
+SEED = 42
+
+BASE_MODEL_NAME = "facebook/opt-125m"
+MODEL_PATH = "facebook/opt-125m"
+DATASET_PATH = "source/dataset"
+
+TRAIN_RATIO = 0.7
+VAL_RATIO = 0.15
+TEST_RATIO = 0.15
+TOTAL_DATASET = 5000
+
+NODE2_IP = "127.0.0.1"
+NODE2_PORT = 6666
+DEBUG_MODE = False
