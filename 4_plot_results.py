@@ -103,11 +103,11 @@ plt.grid(True, axis='y')
 plt.tight_layout()
 plt.savefig(os.path.join(plot_dir, "summary_acc.png"))
 plt.close()
-print("[✓] Saved: summary_acc.png")
+print("Saved: summary_acc.png")
 
 # Print and save summary
 print("\n=== Accuracy and Time Summary ===")
 print(summary_df)
 
 summary_df.to_csv(os.path.join(plot_dir, "summary_table.csv"), index=False)
-print("[✓] Saved: summary_table.csv")
+print("Saved: summary_table.csv")
